@@ -6,11 +6,16 @@ var app = express();
 
 require('../lib/db.js');
 
+app.get('/', function(req,res){
+	const response = 'hi';
+	res.status(200).send(response);
+})
+
 //We need a function which handles requests and send response
 //if the process is anythign other than test create a real server
 if (process.env.NODE_ENV !== 'test') {
   //start server
-  var port = process.env.PORT || 4000;
+  var port = process.env.PORT || 4040;
   app.listen(port);
   console.log("Listening on port ", port);
 } else {
