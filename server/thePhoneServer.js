@@ -11,6 +11,12 @@ app.get('/', function(req,res){
 	res.status(200).send(response);
 })
 
+
+app.post('/', (req,res) => {
+	const response = 'Hi Justin and Natalie';
+	res.status(201).send(response);
+})
+
 //We need a function which handles requests and send response
 //if the process is anythign other than test create a real server
 if (process.env.NODE_ENV !== 'test') {
