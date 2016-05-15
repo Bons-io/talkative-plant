@@ -7,3 +7,8 @@ bower_components/
 
 ## Database files.
 db/
+=======
+node_modules/
+bower_components/
+node_modules/
+bower_components/
