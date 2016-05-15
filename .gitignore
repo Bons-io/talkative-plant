@@ -1,5 +1,13 @@
 node_modules/
 bower_components/
+
+.DS_Store
+
+
+
+## Database files.
+db/
+=======
 node_modules/
 bower_components/
 node_modules/
