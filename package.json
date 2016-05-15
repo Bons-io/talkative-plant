@@ -4,7 +4,8 @@
   "description": "A Raspberry Pi houseplant monitor",
   "main": "thePhoneServer.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/nodemon server/thePhoneServer.js --ignore client/ --ignore node_modules/"
   },
   "repository": {
     "type": "git",
@@ -15,9 +16,13 @@
   "bugs": {
     "url": "https://github.com/Bons-io/talkative-plant/issues"
   },
+  "engines": {
+    "node": "6.0.0"
+  },
   "homepage": "https://github.com/Bons-io/talkative-plant#readme",
   "dependencies": {
     "body-parser": "^1.15.1",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "nodemon": "^1.9.2"
   }
 }

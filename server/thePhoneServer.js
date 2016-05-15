@@ -1,17 +1,19 @@
-var http = require('http');
 var express = require('express');
+var bodyParser = require('body-parser');
 
-const port=8080; 
+
+var app = express();
+
+require('../lib/db.js');
 
 //We need a function which handles requests and send response
-function handleRequest(request, response){
-    response.end('It Works!! Path Hit: ' + request.url);
+//if the process is anythign other than test create a real server
+if (process.env.NODE_ENV !== 'test') {
+  //start server
+  var port = process.env.PORT || 4000;
+  app.listen(port);
+  console.log("Listening on port ", port);
+} else {
+  //else we are in testing mode so export routes for testing
+  module.exports = app;
 }
-
-//Create a server
-var server = http.createServer(handleRequest);
-
-
-server.listen(port, function(){
-    console.log("listening on port: ", port);
-});
