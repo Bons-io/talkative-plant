@@ -1,0 +1,22 @@
+{
+  "name": "talkativeplant",
+  "version": "1.0.0",
+  "description": "A Raspberry Pi houseplant monitor",
+  "main": "thePhoneServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bons-io/talkative-plant.git"
+  },
+  "author": "Bons-io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bons-io/talkative-plant/issues"
+  },
+  "homepage": "https://github.com/Bons-io/talkative-plant#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
