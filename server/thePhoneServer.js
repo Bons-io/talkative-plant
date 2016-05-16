@@ -13,7 +13,6 @@ app.get('/', (req,res) =>{
 })
 
 
-app.get('/')
 
 //default post route
 app.post('/', (req,res) => {
